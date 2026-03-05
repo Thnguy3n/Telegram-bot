@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: milk-tea-bot
+
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:milktea_db}
+    username: ${DB_USER:postgres}
+    password: ${DB_PASS}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  rabbitmq:
+    host: ${RABBITMQ_HOST:localhost}
+    port: ${RABBITMQ_PORT:5672}
+    username: ${RABBITMQ_USER:guest}
+    password: ${RABBITMQ_PASS:guest}
+
+telegram:
+  bot:
+    username: ${BOT_USERNAME}
+    token: ${BOT_TOKEN}
+    owner-chat-id: ${OWNER_CHAT_ID}
+
+rabbitmq:
+  queue:
+    order-notification: order.notification.queue
+  exchange:
+    order: order.exchange
+  routing-key:
+    order-notification: order.notification.routingKey

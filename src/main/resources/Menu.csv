@@ -1,0 +1,8 @@
+category,item_id,name,description,price_m,price_l,available
+Trà Sữa,TS01,Trà Sữa Trân Châu Đen,Trà sữa truyền thống béo ngậy kèm trân châu đen dai giòn,35000,45000,true
+Trà Sữa,TS02,Trà Sữa Matcha,Trà sữa vị matcha Nhật Bản thanh mát,40000,50000,true
+Trà Sữa,TS03,Trà Sữa Khoai Môn,Trà sữa vị khoai môn dẻo thơm,38000,48000,true
+Trà Trái Cây,TC01,Trà Đào Cam Sả,Trà trái cây chua ngọt thanh mát cực đã,35000,45000,true
+Trà Trái Cây,TC02,Trà Vải Thiều,Trà vải thơm lừng giải nhiệt mùa hè,35000,45000,true
+Cà Phê,CF01,Cà Phê Sữa Đá,Cà phê pha phin truyền thống,25000,30000,true
+Cà Phê,CF02,Bạc Xỉu,Cà phê nhiều sữa thơm béo sảng khoái,29000,35000,true
