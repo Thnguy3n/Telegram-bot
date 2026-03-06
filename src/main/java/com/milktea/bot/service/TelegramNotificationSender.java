@@ -16,8 +16,8 @@ public class TelegramNotificationSender {
 
     public void sendMessage(Long chatId, String text) {
         try {
-            String url = "https://api.telegram.org/bot" + botToken + "/sendMessage?chat_id=" + chatId + "&text=" + text + "&parse_mode=HTML";
-            restTemplate.getForObject(url, String.class);
+            String url = "https://api.telegram.org/bot{botToken}/sendMessage?chat_id={chatId}&text={text}&parse_mode=HTML";
+            restTemplate.getForObject(url, String.class, botToken, chatId, text);
             log.info("Successfully sent notification to chat {}", chatId);
         } catch (Exception e) {
             log.error("Failed to send telegram notification to {}", chatId, e);
